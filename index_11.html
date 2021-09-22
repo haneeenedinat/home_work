@@ -6,38 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise#3-Registration Form</title>
     <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
         
       #container {
+        margin-left: 250px;
+        margin-right: 250px;
         
            
         }
         
-       fieldset{
-        display: inline;
-       }
-
-       #fn,#ln,#Ge{
-        margin: 0 auto;
-            padding-right: 200px;
-           padding-left: 200px;
-       }
+       footer{
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-top: 25px;
         
-       #em{
-        padding-left: 178px;
-        padding-right: 200px;
        }
-    
+         
       
+        
+     #fn,#ln,#em{
+       
+        margin-right: 300px;
+        margin-left:  300px;
+   }
+    
+      #Ge{
+        margin-right: 350px;
+        margin-left:  350px;
+   }
+
+   fieldset,section{
+       background-color: cornsilk;
+   }
+
+  
+    
     </style>
 </head>
 <body>
     <h1>Registration Form</h1>
+  <div id="container">
+ <form  action="https://harmash.com/html/html-forms/action-page.php" method="POST" autocomplete="on" >
     
- <form  action="https://harmash.com/html/html-forms/action-page.php" method="POST" autocomplete="on" ></form>
      <fieldset>
-        
      <legend>personal detials</legend>
-        
+    
        <div id="fn">
        <label >First name</label>
        <input type="text" name="fname" > </div><br><br>
@@ -54,11 +71,24 @@
      <label >Gender</label>
      <input type="radio" name="gender" >Male
      <input type="radio" name="gender" >Female</div>
+   
+    </fieldset>
 
+ 
+ <fieldset>
+    <legend>city</legend>
 
-    </div>
- </fieldset>
-
+    <section>
+    <label>city</label>
+   <select>
+        <option>Amman</option>
+        <option>Aqaba</option>
+        <option>Zarqa</option>
+        <option>Irbid</option>
+    </select>
+</fieldset> </section>
+ <footer><input type="submit"value="Subscribe"></footer>
+</div>
   </form>
   
 </body>
